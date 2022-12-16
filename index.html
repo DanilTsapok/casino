@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 10</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="auth" id="auth">
+        <div class="auth-pos">
+            <form id="form-c">
+                <i class='bx bx-user-circle'></i>
+                <p class="name-player">Ім'я гравця</p>
+                <input type="text" id="name-user">
+                <div class="pos-btn ">
+                    <a href="#form-c"class="auth-btn" onclick="auth()">Play</a>
+                </div>           
+            </form> 
+        </div>
+    </div>
+    <div class="start">
+         <a href="#auth"class="start-game" >PLAY</a>
+    </div>
+    <div class="pos-game">
+        <div class="game" id="game-1">
+            <div class="pos-start">
+                <div class="comp" >
+                    <span id="name">User</span>  
+                </div>        
+            </div>
+            <div class="content">
+                <button onclick="func()"class="auth-btn" id="btn" >Generate</button>
+                <a href="index.html"class="auth-btn"id="restart">restart</a>
+            </div>               
+        </div>
+        <div id="showRes" class="show-result">
+            <div class="result-wrapper">
+                <div class="result-content">
+                    <div id='res1' class="result-1">
+                        <p class="resP11"></p>
+                        <p class="resP12"></p>
+                        <p class="resP13"></p>
+                     </div>
+                     <div id='res2' class="result-2">
+                        <p class="resP21"></p>
+                        <p class="resP22"></p>
+                        <p class="resP23"></p>
+                     </div>
+                     <div id='res3' class="result-3">
+                        <p class="resP31"></p>
+                        <p class="resP32"></p>
+                        <p class="resP33"></p>
+                     </div>
+                </div>
+                <div class="answerRes"></div>
+            </div>
+        </div>   
+    </div>
+    <script src="script.js"></script>  
+</body>
+</html>
